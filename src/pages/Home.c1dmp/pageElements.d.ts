@@ -1,0 +1,36 @@
+type PageElementsMap = {
+  "#page1": $w.Page;
+  "#sendButton": $w.Button;
+  "#messageContent": $w.TextBox;
+  "#messagesRead": $w.dataset;
+  "#error": $w.Text;
+  "#columnStrip1": $w.ColumnStrip;
+  "#column1": $w.Column;
+  "#mainRepeater": $w.Repeater;
+  "#container2": $w.Container;
+  "#ownerEmail": $w.Text;
+  "#repeaterText": $w.Text;
+  "#sentTime": $w.Text;
+  "#followButton": $w.Button;
+  "#deleteButton": $w.Button;
+  "#viewMoreButton": $w.Button;
+  "#container1": $w.HiddenCollapsedElement;
+  "#profile1": $w.IFrame;
+  "#horizontalMenu1": $w.Menu;
+  "#alert": $w.Box;
+  "#closeNotificationButton": $w.Button;
+  "#notificationAlertEmail": $w.Text;
+  "#alertText": $w.Text;
+  "#notificationRepeater": $w.Repeater;
+  "#container3": $w.Container;
+  "#notificationEmail": $w.Text;
+  "#notificationText": $w.Text;
+  "#notificationTime": $w.Text;
+  "#header1": $w.Header;
+  "#iconButton1": $w.Button;
+  "#text5": $w.Text;
+  "#searchInput": $w.TextInput;
+  "#notificationButton": $w.Button;
+  "#accountNavBar1": $w.AccountNavBar;
+  "#footer1": $w.Footer;
+}

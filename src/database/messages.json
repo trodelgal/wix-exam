@@ -1,0 +1,100 @@
+{
+  "displayName": "messages",
+  "permissions": {
+    "insert": "siteMember",
+    "update": "siteMemberAuthor",
+    "remove": "siteMemberAuthor",
+    "read": "anyone"
+  },
+  "version": 0,
+  "allowedOperations": [
+    "count",
+    "get",
+    "find",
+    "remove",
+    "insert",
+    "update"
+  ],
+  "id": "messages",
+  "isDeleted": false,
+  "ownerAppId": null,
+  "displayNamespace": null,
+  "fields": {
+    "_id": {
+      "displayName": "ID",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": true,
+      "type": "text",
+      "index": 1
+    },
+    "_owner": {
+      "displayName": "Owner",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": true,
+      "type": "text",
+      "index": 2
+    },
+    "_createdDate": {
+      "displayName": "Created Date",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": true,
+      "type": "datetime",
+      "index": 3
+    },
+    "userEmail": {
+      "displayName": "userEmail",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 7
+    },
+    "contenet": {
+      "displayName": "contenet",
+      "sortable": true,
+      "isDeleted": true,
+      "systemField": false,
+      "type": "text",
+      "index": 5
+    },
+    "_updatedDate": {
+      "displayName": "Updated Date",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": true,
+      "type": "datetime",
+      "index": 4
+    },
+    "content": {
+      "displayName": "content",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 8
+    },
+    "userId": {
+      "displayName": "userId",
+      "sortable": true,
+      "isDeleted": true,
+      "systemField": false,
+      "type": "text",
+      "index": 6
+    },
+    "title": {
+      "displayName": "Title",
+      "sortable": true,
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 0
+    }
+  },
+  "displayField": "title",
+  "storage": "docstore",
+  "translatable": false,
+  "namespace": null
+}

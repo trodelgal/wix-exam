@@ -1,0 +1,32 @@
+import wixRealtimeBackend from "wix-realtime-backend";
+import wixData from 'wix-data';
+import {messageChannel, deleteChannel} from 'public/channels';
+
+// post new message and send it to client
+export async function sendMessage(message){
+	const posted = await addToCollection(message)
+	wixRealtimeBackend.publish(messageChannel,posted)
+		.then(()=>{
+			console.log("message sent")
+		})	
+}
+// delete messege
+export async function deleteMessage(messageId){
+	wixRealtimeBackend.publish(deleteChannel,messageId)
+		.then(()=>{
+			console.log("message deleted")
+		})	
+}
+
+async function addToCollection(messageObject) {
+ try{
+    const message = await wixData.insert("messages", messageObject);
+	return message;
+ }catch(error){
+     console.log(error);
+ }
+}
+
+
+
+

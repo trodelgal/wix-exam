@@ -1,0 +1,9 @@
+{
+  "name": "wix-exam",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "corvid-cli": "^0.2.11",
+    "corvid-types": "^0.1.120"
+  }
+}

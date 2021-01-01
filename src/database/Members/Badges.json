@@ -1,0 +1,136 @@
+{
+  "displayName": "Badges",
+  "version": 0,
+  "allowedOperations": [
+    "get",
+    "find",
+    "count"
+  ],
+  "id": "Members/Badges",
+  "isDeleted": false,
+  "ownerAppId": "SiteMembers",
+  "displayNamespace": null,
+  "fields": {
+    "backgroundColor": {
+      "displayName": "Background Color",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 3
+    },
+    "description": {
+      "displayName": "Description",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 2
+    },
+    "_id": {
+      "displayName": "ID",
+      "sortable": false,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome"
+      ],
+      "isDeleted": false,
+      "systemField": true,
+      "type": "text",
+      "index": 0
+    },
+    "_createdDate": {
+      "displayName": "Created Date",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": true,
+      "type": "datetime",
+      "index": 8
+    },
+    "icon": {
+      "displayName": "Icon",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "image",
+      "index": 5
+    },
+    "textColor": {
+      "displayName": "Text Color",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 4
+    },
+    "_updatedDate": {
+      "displayName": "Updated Date",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": true,
+      "type": "datetime",
+      "index": 9
+    },
+    "slug": {
+      "displayName": "Slug",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "gt",
+        "lt",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 7
+    },
+    "roleId": {
+      "displayName": "Role ID",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 6
+    },
+    "members": {
+      "displayName": "Members",
+      "sortable": false,
+      "queryOperators": [
+        "hasSome"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "array<string>",
+      "index": 10
+    },
+    "title": {
+      "displayName": "Title",
+      "sortable": true,
+      "queryOperators": [
+        "ne",
+        "contains"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 1
+    }
+  },
+  "displayField": "title",
+  "storage": "driver",
+  "translatable": false,
+  "defaultSort": {
+    "fieldName": "_createdDate",
+    "direction": "desc"
+  },
+  "namespace": "Members"
+}

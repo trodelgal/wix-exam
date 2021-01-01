@@ -1,0 +1,257 @@
+{
+  "displayName": "PrivateMembersData",
+  "permissions": {
+    "insert": "admin",
+    "update": "admin",
+    "remove": "admin",
+    "read": "siteMemberAuthor"
+  },
+  "version": 0,
+  "allowedOperations": [
+    "count",
+    "get",
+    "find"
+  ],
+  "id": "Members/PrivateMembersData",
+  "isDeleted": false,
+  "ownerAppId": "14cc59bc-f0b7-15b8-e1c7-89ce41d0e0c9",
+  "displayNamespace": "Members",
+  "fields": {
+    "name": {
+      "displayName": "Name",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 2
+    },
+    "lastLogin": {
+      "displayName": "Last Login Date",
+      "sortable": true,
+      "queryOperators": [
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "ne",
+        "eq"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "datetime",
+      "index": 12
+    },
+    "loginEmail": {
+      "displayName": "Login Email",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 1
+    },
+    "_id": {
+      "displayName": "ID",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": true,
+      "type": "text",
+      "index": 0
+    },
+    "_createdDate": {
+      "displayName": "Creation Date",
+      "sortable": true,
+      "queryOperators": [
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "ne",
+        "eq"
+      ],
+      "isDeleted": false,
+      "systemField": true,
+      "type": "datetime",
+      "index": 10
+    },
+    "_updatedDate": {
+      "displayName": "Last Updated",
+      "sortable": true,
+      "queryOperators": [
+        "gt",
+        "gte",
+        "lt",
+        "lte",
+        "ne",
+        "eq"
+      ],
+      "isDeleted": false,
+      "systemField": true,
+      "type": "datetime",
+      "index": 11
+    },
+    "slug": {
+      "displayName": "Slug",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 7
+    },
+    "phones": {
+      "displayName": "Phones",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "object",
+      "index": 15
+    },
+    "lastName": {
+      "displayName": "Last Name",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 4
+    },
+    "firstName": {
+      "displayName": "First Name",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 3
+    },
+    "mainPhone": {
+      "displayName": "Main Phone",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 14
+    },
+    "language": {
+      "displayName": "Language",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 8
+    },
+    "status": {
+      "displayName": "Status",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 9
+    },
+    "picture": {
+      "displayName": "Picture",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "image",
+      "index": 5
+    },
+    "emails": {
+      "displayName": "Emails",
+      "sortable": false,
+      "queryOperators": [],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "object",
+      "index": 13
+    },
+    "nickname": {
+      "displayName": "Nickname",
+      "sortable": true,
+      "queryOperators": [
+        "eq",
+        "ne",
+        "hasSome",
+        "contains",
+        "startsWith",
+        "urlized"
+      ],
+      "isDeleted": false,
+      "systemField": false,
+      "type": "text",
+      "index": 6
+    }
+  },
+  "displayField": "loginEmail",
+  "storage": "driver",
+  "translatable": false,
+  "defaultSort": {
+    "fieldName": "loginEmail",
+    "direction": "asc"
+  },
+  "namespace": "Members"
+}
